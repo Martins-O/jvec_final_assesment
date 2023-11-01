@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latest News</title>
+</head>
+<body>
+    <h1>Latest News</h1>
+
+    <!-- Search Box -->
+    <form method="get" action="{% url 'latest_news' %}">
+        <input type="text" name="search" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+
+    <!-- Filter by Type -->
+    <label for="item_type">Filter by Type:</label>
+    <select name="item_type" id="item_type">
+        <option value="">All</option>
+        <option value="story">Stories</option>
+        <option value="comment">Comments</option>
+        <!-- Add more options for other item types -->
+    </select>
+
+    <!-- News Items -->
+    <ul>
+        {% for item in news_items %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+                <p>Author: {{ item.author }}</p>
+                <p>Type: {{ item.get_item_type_display }}</p>
+                <p>Score: {{ item.score }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Pagination Links -->
+    <div class="pagination">
+        <span class="step-links">
+            {% if news_items.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ news_items.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current-page">
+                Page {{ news_items.number }} of {{ news_items.paginator.num_pages }}.
+            </span>
+
+            {% if news_items.has_next %}
+                <a href="?page={{ news_items.next_page_number }}">next</a>
+                <a href="?page={{ news_items.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+</body>
+</html>

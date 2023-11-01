@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+celery = {extras = ["redis"], version = "*"}
+psycopg2-binary = "*"
+django = "*"
+decouple = "*"
+python-decouple = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
