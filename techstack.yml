@@ -1,0 +1,112 @@
+repo_name: Martins-O/jvec_final_assesment
+report_id: 558c4ce76aba8f7041f38f3cd00d37cc
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-10T15:19:37+00:00'
+requested_by: Martins-O
+provider: github
+branch: indev
+detected_tools_count: 8
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment
+  detection_source: Repo Metadata
+- name: Django
+  description: The Web framework for perfectionists with deadlines
+  website_url: https://www.djangoproject.com/
+  version: 4.2.7
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/994/4aGjtNQv.png
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment/blob/indev/Pipfile.lock
+  detection_source: Pipfile
+  last_updated_by: Martins-O
+  last_updated_on: 2023-11-01 18:28:48.000000000 Z
+- name: Celery
+  description: Distributed task queue
+  website_url: http://www.celeryproject.org/
+  version: 5.3.4
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Message Queue
+  image_url: https://img.stackshare.io/service/1075/celery.png
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment/blob/indev/Pipfile.lock
+  detection_source: Pipfile
+  last_updated_by: Martins-O
+  last_updated_on: 2023-11-01 18:28:48.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment
+  detection_source: Repo Metadata
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment/blob/indev/Pipfile
+  detection_source: Pipfile
+  last_updated_by: Martins-O
+  last_updated_on: 2023-11-01 18:28:48.000000000 Z
+- name: psycopg2-binary
+  description: Psycopg2 - Python-PostgreSQL Database Adapter
+  package_url: https://pypi.org/project/psycopg2-binary
+  version: 2.9.9
+  license: BSD-3-Clause-Attribution
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment/blob/indev/Pipfile.lock
+  detection_source: Pipfile
+  last_updated_by: Martins-O
+  last_updated_on: 2023-11-01 18:28:48.000000000 Z
+- name: python-decouple
+  description: Strict separation of settings from code
+  package_url: https://pypi.org/project/python-decouple
+  version: '3.8'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20545/default_7b61da87043cab6a451d00283941da078ee5c9d9.png
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment/blob/indev/Pipfile.lock
+  detection_source: Pipfile
+  last_updated_by: Martins-O
+  last_updated_on: 2023-11-01 18:28:48.000000000 Z
+- name: python-dotenv
+  description: Add .env support to your django/flask apps in development and deployments
+  package_url: https://pypi.org/project/python-dotenv
+  version: 1.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20095/default_3141eabecdd8efa55de73a33c43f2ac0d5bbf954.png
+  detection_source_url: https://github.com/Martins-O/jvec_final_assesment/blob/indev/Pipfile.lock
+  detection_source: Pipfile
+  last_updated_by: Martins-O
+  last_updated_on: 2023-11-01 18:28:48.000000000 Z
